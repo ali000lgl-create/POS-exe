@@ -1493,6 +1493,7 @@ function toast(msg, type){
 function populateLoginBranches(){
   const sel = document.getElementById('loginBranchSelect');
   sel.innerHTML = activeBranches().map(b=>`<option value="${b.id}">${b.name}</option>`).join('');
+  sel.selectedIndex = 0;
 }
 
 function refreshLoginBranding(){
